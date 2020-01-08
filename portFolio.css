@@ -1,0 +1,164 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+
+#container-fluid .row {
+  margin-right: 0px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.chocolat {
+	position: top ;
+	position : fixed ;
+	height : 7% ;
+	text-align : center ;
+	width : 100% ; 
+	color : black ;
+	background-color : white ; 
+  list-style-type: none;
+  background: linear-gradient(to bottom, rgba(255, 255, 255,1), rgba(206, 206, 206,1));
+  box-shadow: 1px 1px 10px rgb(0, 0, 0);
+	text-shadow: 50px 1px 100px rgb(0, 0, 0);
+    z-index: 1;
+     
+}
+
+.chocolat ul a{
+  display: fixed ;
+  padding: 10px 20px 10px 20px;
+  list-style-type: none;   
+  font-size: 20px;
+	text-decoration: none;
+	color: #454545;
+	-webkit-transition: color 0.7s linear ;
+	-moz-transition : color 0.7s linear ;
+	-ms-transition : color 0.7s linear ;
+	-o-transition : color 0.7s linear ;
+	transition : color 0.7s linear ;
+	z-index: 2;}
+
+.chocolat ul a:hover{
+    padding: 10px 20px 10px 20px;
+    list-style-type: none;
+    color: rgb(248, 3, 28);
+	z-index: 3;}
+
+.chocolat li {
+	display:inline ; 
+    line-height: 50px  ;}
+    
+li {
+    list-style-position: inside;
+}
+
+
+
+html {
+	scroll-behavior: smooth;
+  }
+
+
+.chocolat .icon {
+    display: none;
+  }
+
+@media screen and (max-width: 539px) {
+    .chocolat ul a {display: none;}
+    .chocolat ul a.icon {
+        float: left;
+        display: block;
+
+    }
+}
+
+@media screen and (max-width: 539px) {
+    .chocolat.responsive {position: relative;}
+    .chocolat.responsive ul a.icon {
+    
+      position: relative;
+      left: 0;
+      top: 0;
+      
+    }
+    .chocolat.responsive ul a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+}
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color : white ; 
+    list-style-type: none;
+    background: linear-gradient(to bottom, rgba(255, 255, 255,1), rgba(206, 206, 206,1));
+    box-shadow: 1px 1px 10px rgb(0, 0, 0);
+	  text-shadow: 50px 1px 100px rgb(0, 0, 0);
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 10px; /* Place content 60px from the top */
+    transition: 1.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    list-style-type: none;   
+    padding: 0px 8px 8px 60px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #454545;    
+    display: block;
+    transition: 0.3s;
+    -webkit-transition: color 0.7s linear ;
+	  -moz-transition : color 0.7s linear ;
+	  -ms-transition : color 0.7s linear ;
+	  -o-transition : color 0.7s linear ;
+	  transition : color 0.7s linear ;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    text-decoration: none;
+    padding: 0px 20px 10px 60px;
+    list-style-type: none;
+    color: rgb(248, 3, 28);
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+  #wholeScreen {
+    margin-top : 3.5% ;
+    height: 2000px  ;
+    width : 100% ;
+    background-image: url(image/bg.png);
+  }
